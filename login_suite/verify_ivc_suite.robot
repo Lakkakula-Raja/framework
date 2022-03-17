@@ -12,8 +12,8 @@ TC2     babu        konda587        Invalid credentials
 
 *** Keywords ***
 TC IVC Template
-    [Arguments]     ${username}     ${password}     ${ERROR}
+    [Arguments]     ${username}     ${password}     ${IVC}
     Input Text    id=txtUsername    ${username}
     Input Password    id=txtPassword    ${password}
     Click Button    id=btnLogin
-    Element Text Should Be    xpath=//span[@id="spanMessage"]    ${ERROR}
+    Element Text Should Be    xpath=//span[@id="spanMessage"]    ${IVC}
