@@ -5,6 +5,7 @@ Test Setup      launch Browser
 Test Teardown       Close Browser
 #Library     SeleniumLibrary
 Resource    ../Resource/Base/CommonFunctionality.resource
+
 *** Test Cases ***
 
 TC_VC
