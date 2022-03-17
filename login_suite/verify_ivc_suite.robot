@@ -9,6 +9,8 @@ Resource    ../Resource/Base/CommonFunctionality.resource
 *** Test Cases ***
 TC1     raja        konda123        Invalid credentials
 TC2     babu        konda587        Invalid credentials
+TC3     ${EMPTY}  Konda123        Username cannot be empty
+TC4     raja    ${EMPTY}        Password cannot be empty
 
 *** Keywords ***
 TC IVC Template
