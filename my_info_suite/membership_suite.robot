@@ -11,6 +11,7 @@ Create testcase then connet with template & excel
 9. Coin as Rupiah India
 10. table contains added record
 *** Settings ***
+Documentation   this will check the membership details
 Test Setup      launch Browser
 Test Teardown       Close Browser
 Test Template       Mempership Template
@@ -36,6 +37,8 @@ Mempership Template
     Select From List By Label    id=membership_subscriptionPaidBy        ${msp}
     Input Text    id=membership_subscriptionAmount    ${msa}
     Select From List By Label    id=membership_currency        ${mc}
+    Input Text    id=membership_subscriptionCommenceDate    2022-04-26
+    Input Text    id=membership_subscriptionRenewalDate    2023-04-26
     Click Element    id=btnSaveMembership
     Table Should Contain    xpath=//table[@class="table hover"]    ${mm}
     Table Should Contain    xpath=//table[@class="table hover"]    ${msp}

@@ -16,5 +16,7 @@ TC_VC
     Click Element    id=menu_pim_viewMyDetails
     Click Element    id=welcome
     Click Element       link=Logout
+    #Capture Element Screenshot    locator
+    Capture Page Screenshot
 
 
